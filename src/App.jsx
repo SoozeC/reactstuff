@@ -1,15 +1,8 @@
-import React, { Component } from 'react';
-import Header from './Header';
-import Paragraph from './Paragraph';
-import Square from './Square';
-
+import React from 'react';
+import Stuff from './Stuff';
 
 const App = () => (
-    <React.Fragment>
-        <Header />
-        <Paragraph />
-        <Square />
-    </React.Fragment>
+  <Stuff />
 );
 
 export default App;
