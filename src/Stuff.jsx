@@ -6,9 +6,9 @@ import People from './People';
 
 const Stuff = () => (
 	<div>
-	    <Header />
-	    <Paragraph />
-	    <Square />
+	    <Header title="This title goes into the h1"/>
+	    <Paragraph title="There is text in here"/>
+	    <Square color="purple" />
 	    <People />
 	</div>
 );

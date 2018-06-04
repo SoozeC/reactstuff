@@ -1,17 +1,24 @@
 import React from "react";
 
-let names = ["James P. Sullivan", "Mike Wazowski", "Boo", 
-"Randall Boggs", "Roz", "Fungus"];
+// const People = props => (
 
-const People = () => (
-    <ul className="list-group">
-        { names.map(i => 
-            <li class="list-group-item" key={ i }>
-                { i }
-            </li> 
-        )}
-    </ul>
+// 	props.names ? <p> yes names exists</p> : <p>Nothing to see here</p>
+
+// );
+
+
+const People = props => (
+	props.names ? (
+	    <ul>
+	         { props.names.map((i, index) => (
+	            <li key={ index }> { i }
+	            </li>
+	        ))}
+	    </ul> 
+    ) : <p>Nothing to see here</p>
+
 );
+
 
 
 export default People;
