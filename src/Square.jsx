@@ -10,4 +10,8 @@ const Square = props => {
 	return <div style={divStyle}></div>
 };
 
+// Square.defaultProps = {
+// 	color = "red"
+// };
+
 export default Square;

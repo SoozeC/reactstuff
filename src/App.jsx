@@ -1,8 +1,9 @@
 import React from 'react';
-import Stuff from './Stuff';
+import Clicked from './Clicked';
 
 const App = () => (
-  <Stuff />
+	<Clicked />
+	
 );
 
 export default App;
