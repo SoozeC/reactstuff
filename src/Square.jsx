@@ -1,17 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
+
+class Square extends Component {
 
 
-const Square = props => {
+
+  constructor(props) {
+    super(props);
+    this.state = { clicked: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    const { clicked } = this.state;
+    clicked ? this.setState( { clicked: false }) : this.setState( { clicked: true });
+  }
+
+  render() {
+	const { clicked } = this.state;
+	const colour = clicked ? "red " : "blue";
 	const divStyle = {
-	  backgroundColor: props.color,
-	  height: '200px',
-	  width: '200px',
+		backgroundColor: colour,
+		border: "10px solid black",
+		height: '200px',
+		width: '200px',
 	};
-	return <div style={divStyle}></div>
-};
 
-// Square.defaultProps = {
-// 	color = "red"
-// };
+
+    return <div style={divStyle} onClick={ this.handleClick } ></div>;
+  }
+}
 
 export default Square;
