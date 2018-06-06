@@ -24,7 +24,7 @@ class StepCounter extends Component {
 		}
 
 	render() {
-		const { max, step } = this.props;
+		// const { max, step } = this.props;
 		const frag = <React.Fragment>
 						<p> { this.state.count } </p>
 						<button onClick={ this.handleClickAdd }>+</button> 
