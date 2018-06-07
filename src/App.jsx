@@ -1,14 +1,14 @@
 import React from 'react';
 // import Adder from './Adder';
 // import Transform from './Transform';
-import TempConverter from './TempConverter';
+import Buttons from './Buttons';
 
 // let fn = x => x * x
 
 const App = () => (
 	// <Adder />
 	// <Transform transform={ fn } />
-	<TempConverter />
+	<Buttons />
 );
 
 export default App;
