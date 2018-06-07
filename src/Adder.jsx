@@ -31,6 +31,7 @@ class Adder extends Component {
 	render() {
 		return ( 
 			<React.Fragment>
+				<h1>Adding up some numbers</h1>
 				<input onChange={ this.handleUpdate } ></input> 
 				<button onClick={ this.handleAdd } >Add another number</button>
 				<button onClick={ this.handleTotal } >Total all numbers</button>

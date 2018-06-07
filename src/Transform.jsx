@@ -19,6 +19,7 @@ class Transform extends Component {
 	render() {
 		return ( 
 			<React.Fragment>
+				<h1>Squaring a number</h1>
 				<input type="number" onChange={ this.handleUpdate } ></input> 
 				<p>{this.state.input}</p>
 			</React.Fragment>
